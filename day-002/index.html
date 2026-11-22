@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MY TRADING TERMINAL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>MY TRADING TERMINAL</h1>
+    
+
+    <p>I have 8 years of trading experience, including 4 years of perpetual futures trading.</p>
+
+    <h2>CRYPTO ASSETS TO TRADE</h2>
+
+    <ul>
+        <li>BTC</li>
+        <li>ETH</li>
+        <li>HYPE</li>
+        <li>SANNATIONCOIN</li>
+    </ul>
+<a href="https://github.com/santhoshnation/developer-120-days">
+    Visit My GitHub Repository
+</a>
+        <h2>Market Overview</h2>
+
+<table>
+    <tr>
+        <th>Asset</th>
+        <th>Price</th>
+        <th>24h Change</th>
+    </tr>
+    <tr>
+        <td>BTC</td>
+        <td>$95,000</td>
+        <td class="positive">+2.5%</td>
+    </tr>
+    <tr>
+        <td>ETH</td>
+        <td>$3,200</td>
+        <td class="negative">-1.2%</td>
+    </tr>
+    <tr>
+        <td>HYPE</td>
+        <td>$40</td>
+        <td class="positive">+5.4%</td>
+    </tr>
+    <tr>
+         <td>SOL</td>
+        <td>$840</td>
+        <td class="negative">-0.5%</td>
+     </tr>    
+</table>
+<h2>Place Order</h2>
+
+<form>
+    <label for="asset">Select Asset:</label>
+
+    <select id="asset">
+        <option>BTC</option>
+        <option>ETH</option>
+        <option>HYPE</option>
+        <option>SOL</option>
+    </select>
+
+    <br><br>
+
+    <label for="order-type">Order Type:</label>
+
+    <select id="order-type">
+        <option>Market</option>
+        <option>Limit</option>
+    </select>
+
+    <br><br>
+
+    <label for="limit-price">LIMIT ORDER PRICE (USDC):</label>
+    <input type="number" id="limit-price" min="0" step="any"> 
+
+    <br><br>
+
+    <label for="size">Position Size (USDC):</label>
+    <input type="number" id="size" min="0">
+
+    <br><br>
+
+    <label for="leverage">Leverage:</label>
+    <input type="number" id="leverage" min="1" max="10">
+
+    <br><br>
+
+    <label for="take-profit">TAKE PROFIT PRICE (USDC):</label>
+    <input type="number" id="take-profit" min="0" step="any">
+
+    <br><br>
+
+    <label for="stop-loss">STOP LOSS PRICE (USDC):</label>
+    <input type="number" id="stop-loss" min="0" step="any">
+
+    <br><br>
+
+    <button type="button" class="buy">Buy / Long</button>
+    <button type="button" class="sell">Sell / Short</button>
+    <button type="button" class="cancel">Cancel order</button>
+</form>
+</body>
+</html>
